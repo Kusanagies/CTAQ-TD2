@@ -13,4 +13,12 @@ public class GavTest {
         // Vérification avec assertEquals que le groupe vaut "org.acme"
         assertEquals("org.acme", gav.group());
     }
+    @Test 
+    public void testParseFullCoordinate(){
+        Gav gav = Gav.parse("org.other:lib-c:3.0.0");
+
+        assertEquals("org.other",gav.group());
+        assertEquals("lib-c",gav.artifact());
+        assertEquals("3.0.0",gav.version());
+    }
 }
