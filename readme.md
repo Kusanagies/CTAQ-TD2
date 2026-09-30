@@ -15,3 +15,10 @@ Task List
 [5] - IPomParser/LineBasedPomParser : Coder l'analyseur lisant la première ligne pour le nom du projet et les suivantes pour les dépendances déclarées. L'analyseur doit ignorer les lignes vides.
 [6] - IResolver/AllVersionsResolver : Implémenter le calcul de la fermeture transitive des dépendances en interrogeant le registre pour chaque artefact. Il faut intégrer la règle métier spécifique à ce TD stipulant que toutes les versions sont conservées en cas de conflit.
 [7] - BuildTool : Construire l'orchestrateur de haut niveau qui n'a pas d'interface propre. Il lira le fichier via le parseur puis résoudra les dépendances via le résolveur.
+
+Question 5 :
+
+La chaine de caractère "org.acme". Elle est présente à la fois dans l'assertion du test GavTest et en dur dans la méthode groupe() du code de Gav.
+
+Le code n'est pas générique. La chaine de caractère avait été créer juste pour répondre à ce test spécifique, si l'on avait mis une autre coordonnée, le code renverrait toujours "org.acme".C'est pour ca qu'on doit passer à la prochaine phase pour forcer l'écriture du vrai algoerithme de découpage.
+
