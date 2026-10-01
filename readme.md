@@ -22,3 +22,8 @@ La chaine de caractère "org.acme". Elle est présente à la fois dans l'asserti
 
 Le code n'est pas générique. La chaine de caractère avait été créer juste pour répondre à ce test spécifique, si l'on avait mis une autre coordonnée, le code renverrait toujours "org.acme".C'est pour ca qu'on doit passer à la prochaine phase pour forcer l'écriture du vrai algoerithme de découpage.
 
+Question 7 : 
+
+Oui, elles représentent toutes les deux des entrées valides qui respectent parfaitement le format attendu.
+
+La méthode "fake it" montre qu'il est possible de faire un premier test en renvoyant simplement une valeur constante. La triangulation permet de raffiner le test pour cerner le vraie comportement attendu de la méthode. Elles utilisent des méthodes différentes, l'ajout  de ce second test rend l'utilisation d'une valeur en dur impossible.
