@@ -28,3 +28,9 @@ Oui, elles représentent toutes les deux des entrées valides qui respectent par
 
 La méthode "fake it" montre qu'il est possible de faire un premier test en renvoyant simplement une valeur constante. La triangulation permet de raffiner le test pour cerner le vraie comportement attendu de la méthode. Elles utilisent des méthodes différentes, l'ajout  de ce second test rend l'utilisation d'une valeur en dur impossible.
 
+Question 10 : 
+
+Optional rend explicite dans la signature de la méthode que la valeur peut etre absente. Cela nous force alors à gérer le cas ou l'artefact n'est pas trouvé, éliminant alors le risque de Null
+
+Ne pas trouver un artefact dans le stockage local ou un registre lors d'une recherche n'est pas un comportement qui a besoin d'un traitement d'erreur, c'est un cas d'usage normal.
+
