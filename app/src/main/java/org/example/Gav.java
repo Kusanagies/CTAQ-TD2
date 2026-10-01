@@ -13,8 +13,14 @@ public class Gav {
     // Le constructeur par défaut est suffisant pour le moment
     
     public static Gav parse(String coordinate) {
-        String[] parts = coordinate.split(":");
+        if(coordinate == null){
+            throw new IllegalArgumentException("La coordonnée ne peut être nulle");
+        }
 
+        String[] parts = coordinate.split(":");
+        if(parts.length != 3 ||  parts[0].isEmpty() || parts[1].isEmpty() || parts[2].isEmpty()){
+            throw new IllegalArgumentException("Format invalide, attendu : group:artifact:version");
+        }
         return new Gav(parts[0],parts[1],parts[2]);
     }
 

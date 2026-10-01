@@ -8,7 +8,7 @@ Jacoco est une bibliothèque de couverture de code
 Question 3:
 Task List
 
-[1] - Types de données de bases : Création des classes pour Java (avec sa logique de validation), Artifact (coordonnée et dépendances directes) et Project (nom et dépendances directes)
+[X] - Types de données de bases : Création des classes pour Java (avec sa logique de validation), Artifact (coordonnée et dépendances directes) et Project (nom et dépendances directes)
 [2] -ILineReader/BufferedLineReader : Implémenter la lecure ligne à ligne du fichier de build via un adapteur sur Buffered Reader.
 [3] - IStorage/InMemoryStorage : Développer le stockage clé-valeur associant une coordonnée à son artefact.
 [4] - IRegistry/StorageBasedRegistry : Créer le registre permettant de publier et de rechercher des artefacts. Il faut inclure la règle métier levant une exception AlreadyPublishedException pour refuser la republication d'une coordonnée déjà existante.
@@ -27,3 +27,4 @@ Question 7 :
 Oui, elles représentent toutes les deux des entrées valides qui respectent parfaitement le format attendu.
 
 La méthode "fake it" montre qu'il est possible de faire un premier test en renvoyant simplement une valeur constante. La triangulation permet de raffiner le test pour cerner le vraie comportement attendu de la méthode. Elles utilisent des méthodes différentes, l'ajout  de ce second test rend l'utilisation d'une valeur en dur impossible.
+
